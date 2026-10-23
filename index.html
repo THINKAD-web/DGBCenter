@@ -21,10 +21,9 @@
     "addressCountry": "KR"
   },
   "telephone": "+82-2-444-1100",
-  "email": "esgrandbowl@naver.com",
   "openingHoursSpecification": [
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"03:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:30","closes":"03:00"}
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"03:00"}
   ],
   "sameAs": "https://www.instagram.com/esgrandbowl_official/"
 }
@@ -206,12 +205,9 @@ section.block{padding:88px 0}
 .group .ph img{width:100%;height:230px;object-fit:cover}
 .inquiry{background:#fff;color:var(--night);border-radius:14px;padding:24px}
 .inquiry h3{margin:0 0 14px;font-family:var(--display);font-weight:400;font-size:26px}
-.inquiry label{display:block;font-size:14px;font-weight:600;margin-bottom:12px}
-.inquiry input,.inquiry textarea{display:block;width:100%;margin-top:5px;padding:12px 14px;border:1.5px solid #cfd5e6;border-radius:8px;font:inherit;font-size:16px;background:#fff;color:var(--night)}
-.inquiry .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.inquiry .btn{width:100%;margin-top:6px}
-.inquiry .msg{margin:12px 0 0;font-size:14.5px;font-weight:600;min-height:1.2em}
-@media (max-width:860px){.group .wrap{grid-template-columns:1fr}.inquiry .two{grid-template-columns:1fr}}
+.inquiry p{margin:0 0 18px;font-size:16px;line-height:1.55;color:#2a3358}
+.inquiry .btn{width:100%;margin-top:6px;text-align:center}
+@media (max-width:860px){.group .wrap{grid-template-columns:1fr}}
 
 /* location */
 .loc{display:grid;grid-template-columns:1fr 1fr;gap:36px}
@@ -293,7 +289,7 @@ footer small{display:block;margin-top:30px;opacity:.7}
     </div>
     <div class="hours">
       <div>평일 월–금<strong>10:00–03:00</strong></div>
-      <div>주말 토–일<strong>09:30–03:00</strong></div>
+      <div>주말 토–일<strong>10:00–03:00</strong></div>
       <div>문의<strong><a href="tel:024441100" style="color:inherit;text-decoration:none">02-444-1100</a></strong></div>
     </div>
   </div>
@@ -430,20 +426,11 @@ footer small{display:block;margin-top:30px;opacity:.7}
       </ul>
       <div class="gbtns"><a class="btn white" href="tel:024441100">전화 상담 02-444-1100</a><a class="btn ghost" href="https://map.naver.com/p/search/%EB%8F%99%EC%84%9C%EC%9A%B8%EA%B7%B8%EB%9E%9C%EB%93%9C%EB%B3%BC%EB%A7%81%EC%84%BC%ED%84%B0" target="_blank" rel="noopener">네이버 플레이스</a></div>
     </div>
-    <form class="inquiry" id="inquiry" novalidate>
+    <div class="inquiry">
       <h3>단체·대관 문의</h3>
-      <label>이름<input type="text" name="name" required autocomplete="name"></label>
-      <label>연락처<input type="tel" name="phone" required autocomplete="tel" inputmode="tel"></label>
-      <div class="two">
-        <label>희망 인원<input type="number" name="people" min="1" inputmode="numeric"></label>
-        <label>희망 날짜<input type="date" name="date"></label>
-      </div>
-      <label>문의 내용<textarea name="message" rows="4"></textarea></label>
-      <button type="submit" class="btn red">문의 보내기</button>
-      <p class="msg" id="formMsg" role="status" aria-live="polite"></p>
-      <p class="note" style="color:#5b6486;margin-top:10px">메일 앱이 열리면 ‘보내기’를 눌러 주세요. 메일 앱이 없으시면 아래 버튼으로 주소를 복사하거나 전화 주세요.</p>
-      <button type="button" class="btn line" id="copyMail" style="width:100%;margin-top:8px">메일 주소 복사 · esgrandbowl@naver.com</button>
-    </form>
+      <p>단체·대관 문의는 매장으로 전화 연락 바랍니다</p>
+      <a class="btn red" href="tel:024441100">02-444-1100 전화하기</a>
+    </div>
   </div>
 </section>
 
@@ -453,9 +440,8 @@ footer small{display:block;margin-top:30px;opacity:.7}
       <div class="sh" style="margin-bottom:14px"><h2>오시는 길</h2></div>
       <p class="addr">서울특별시 광진구 강변역로 50<br>동서울터미널 6층</p>
       <table>
-        <tr><th>운영시간</th><td>월–금 10:00–03:00<br>토–일 09:30–03:00</td></tr>
+        <tr><th>운영시간</th><td>월–금 10:00–03:00<br>토–일 10:00–03:00</td></tr>
         <tr><th>전화</th><td><a href="tel:024441100">02-444-1100</a></td></tr>
-        <tr><th>문의 메일</th><td><a href="mailto:esgrandbowl@naver.com">esgrandbowl@naver.com</a></td></tr>
       </table>
       <div class="btns">
         <a class="btn red" href="https://map.naver.com/p/search/%EB%8F%99%EC%84%9C%EC%9A%B8%EA%B7%B8%EB%9E%9C%EB%93%9C%EB%B3%BC%EB%A7%81%EC%84%BC%ED%84%B0" target="_blank" rel="noopener">네이버 지도</a>
@@ -485,7 +471,7 @@ footer small{display:block;margin-top:30px;opacity:.7}
       <details><summary>대회에는 누가 참가할 수 있나요?</summary>
         <p>대회마다 참가 자격이 다릅니다. 대부분 당 센터 정회원 대상이며, 포인트 상위자만 참가하는 대회도 있습니다. 위 일정의 ‘요강 보기’에서 확인하세요.</p></details>
       <details><summary>단체 예약이나 전체 대관이 가능한가요?</summary>
-        <p>가능합니다. 회식, 동호회, 기업 행사 등 인원과 날짜를 알려주시면 맞춰서 안내해 드립니다.</p></details>
+        <p>가능합니다. 단체·대관 문의는 매장으로 전화(02-444-1100) 연락 바랍니다.</p></details>
     </div>
   </div>
 </section>
@@ -497,8 +483,8 @@ footer small{display:block;margin-top:30px;opacity:.7}
     <span class="plate"><img src="images/logo.webp" alt="ES 동서울그랜드볼링센터 로고" width="610" height="61"></span>
     <div class="cols">
       <div>서울특별시 광진구 강변역로 50, 동서울터미널 6층</div>
-      <div>월–금 10:00–03:00 / 토–일 09:30–03:00</div>
-      <div>전화 <a href="tel:024441100">02-444-1100</a><br>메일 <a href="mailto:esgrandbowl@naver.com">esgrandbowl@naver.com</a><br>인스타그램 <a href="https://www.instagram.com/esgrandbowl_official/" target="_blank" rel="noopener">@esgrandbowl_official</a></div>
+      <div>월–금 10:00–03:00 / 토–일 10:00–03:00</div>
+      <div>전화 <a href="tel:024441100">02-444-1100</a><br>인스타그램 <a href="https://www.instagram.com/esgrandbowl_official/" target="_blank" rel="noopener">@esgrandbowl_official</a></div>
     </div>
     <small>대회 일정과 요강은 센터 사정에 따라 변경될 수 있습니다. 최종 안내는 프론트와 인스타그램을 확인해 주세요.</small>
   </div>
@@ -519,9 +505,6 @@ footer small{display:block;margin-top:30px;opacity:.7}
       (스크립트가 실행되지 않아도 일정 내용은 그대로 보입니다.)
    3) 상단 '지금 접수 중' 카드(.hl)는 data-close 날짜가 지나면 자동으로 숨겨집니다.
    ===================================================================== */
-const INQUIRY_EMAIL = 'esgrandbowl@naver.com';
-const FORM_ENDPOINT = '';   /* (선택) Formspree 등 서버 전송 주소를 넣으면 메일 앱 대신 바로 전송됩니다 */
-
 const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'}));
 const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
 const d0=s=>{const [y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
@@ -543,13 +526,13 @@ document.querySelectorAll('#board .ev').forEach(ev=>{
 document.querySelectorAll('.hl').forEach(h=>{ if(today>d0(h.dataset.close)) h.style.display='none'; });
 if(![...document.querySelectorAll('.hl')].some(h=>h.style.display!=='none')) document.querySelector('.hls').style.display='none';
 
-/* 영업 상태 */
+/* 영업 상태 — 평일·주말 모두 10:00 ~ 익일 03:00 */
 (function(){
-  const t=now.getHours()*60+now.getMinutes(), day=now.getDay();
-  const openAt=(day===0||day===6)?570:600;
+  const t=now.getHours()*60+now.getMinutes();
+  const openAt=600;
   const el=document.getElementById('status'), tx=document.getElementById('statusText');
   if(t<180||t>=openAt){el.classList.add('open');tx.textContent='지금 영업 중 · 새벽 3시까지';}
-  else tx.textContent=`오늘 ${openAt===570?'09:30':'10:00'} 오픈`;
+  else tx.textContent='오늘 10:00 오픈';
 })();
 
 /* 모바일 메뉴 */
@@ -565,32 +548,6 @@ document.getElementById('copyAddr').addEventListener('click',async e=>{
   const v='서울특별시 광진구 강변역로 50, 동서울터미널 6층 동서울그랜드볼링센터', b=e.currentTarget;
   try{await navigator.clipboard.writeText(v);}catch(_){const ta=document.createElement('textarea');ta.value=v;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(__){}ta.remove();}
   b.textContent='복사됨';setTimeout(()=>b.textContent='주소 복사',1500);
-});
-
-/* 메일 주소 복사 */
-document.getElementById('copyMail').addEventListener('click',async e=>{
-  const b=e.currentTarget,v=INQUIRY_EMAIL,old=b.textContent;
-  try{await navigator.clipboard.writeText(v);}catch(_){const ta=document.createElement('textarea');ta.value=v;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(__){}ta.remove();}
-  b.textContent='복사됨 · '+v;setTimeout(()=>b.textContent=old,1800);
-});
-
-/* 문의 폼 */
-document.getElementById('inquiry').addEventListener('submit',async e=>{
-  e.preventDefault();
-  const f=e.currentTarget, msg=document.getElementById('formMsg');
-  if(!f.name.value.trim()||!f.phone.value.trim()){msg.style.color='#c0281d';msg.textContent='이름과 연락처를 입력해 주세요.';return;}
-  if(!FORM_ENDPOINT){
-    const body=['[단체·대관 문의]','이름: '+f.name.value,'연락처: '+f.phone.value,'희망 인원: '+(f.people.value||'-'),'희망 날짜: '+(f.date.value||'-'),'','문의 내용:',f.message.value].join('\n');
-    location.href='mailto:'+INQUIRY_EMAIL+'?subject='+encodeURIComponent('[동서울그랜드볼링센터] 단체·대관 문의 - '+f.name.value)+'&body='+encodeURIComponent(body);
-    msg.style.color='#14246a';msg.textContent='메일 앱이 열리면 ‘보내기’를 눌러 주세요. 열리지 않으면 '+INQUIRY_EMAIL+' 로 보내 주시거나 02-444-1100으로 전화 주세요.';
-    return;
-  }
-  msg.style.color='#14246a';msg.textContent='보내는 중...';
-  try{
-    const r=await fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
-    if(r.ok){f.reset();msg.style.color='#1b7f56';msg.textContent='접수되었습니다. 빠른 시일 내 연락드리겠습니다.';}
-    else throw 0;
-  }catch(_){msg.style.color='#c0281d';msg.textContent='전송에 실패했습니다. 02-444-1100으로 전화 주세요.';}
 });
 </script>
 </body>
