@@ -128,9 +128,9 @@ section.block{padding:88px 0}
 /* schedule */
 .hls{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:26px}
 .hl{display:block;text-decoration:none;background:linear-gradient(120deg,#e5372b,#b8201a);color:#fff;border-radius:14px;padding:24px 26px}
-.hl:nth-child(2){background:#fff;color:var(--night)}
+.hl:nth-child(2){background:linear-gradient(135deg,#1a3378,#0f1c4d);color:#fff}
 .hl-tag{display:inline-block;background:#fff;color:#b8201a;font-size:13px;font-weight:700;padding:3px 10px;border-radius:5px}
-.hl-tag.alt{background:var(--navy);color:#fff}
+.hl:nth-child(2) .hl-tag{background:rgba(255,255,255,.16);color:#fff}
 .hl b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:12px 0 8px}
 .hl b small{font-family:var(--body);font-size:15px;font-weight:600;opacity:.9}
 .hl p{margin:2px 0;font-size:15.5px}
@@ -301,45 +301,45 @@ footer small{display:block;margin-top:30px;opacity:.7}
 <section class="block dark" id="schedule">
   <div class="in">
     <div class="sh">
-      <h2>10월 대회·일정</h2>
+      <h2>11월 대회·일정</h2>
       <p>대회 요강과 접수 기간을 미리 확인하세요. 접수는 프론트에서 받습니다.</p>
     </div>
 
-    <div class="hls" aria-label="지금 접수 중인 대회">
-      <a class="hl" href="#jangwon" data-close="2026-10-15">
-        <span class="hl-tag">접수 중 · 10/15(목) 마감</span>
-        <b>장원전 <small>예선 10라운드</small></b>
-        <p>10/18(일) 10시 · 당 센터 정회원 누구나, 인원제한 없음</p>
+    <div class="hls" aria-label="주요 대회 안내">
+      <a class="hl" href="#jangwon" data-open="2026-11-03" data-close="2026-11-12" data-range-label="11/3(화)~11/12(목)" data-close-label="11/12(목)">
+        <span class="hl-tag">접수 예정 · 11/3(화)~11/12(목)</span>
+        <b>장원전 <small>예선 11라운드</small></b>
+        <p>11/15(일) 10시 · 당 센터 정회원 누구나, 인원제한 없음</p>
         <p>참가비 20,000원 · 프론트 접수, 대리접수 가능</p>
       </a>
-      <a class="hl" href="#kkotgil" data-close="2026-10-28">
-        <span class="hl-tag alt">접수 10/20(화) 10시 ~ 10/28(수)</span>
-        <b>꽃길 가는 길 II</b>
-        <p>10/31(토) 오전 10시 · 포인트 상위 72명</p>
-        <p>참가비 20,000원 · 프론트 접수</p>
+      <a class="hl" href="#mixdouble" data-open="2026-11-17" data-close="2026-11-26" data-range-label="11/17(화)~11/26(목)" data-close-label="11/26(목)">
+        <span class="hl-tag">접수 예정 · 11/17(화)~11/26(목)</span>
+        <b>믹스더블 III</b>
+        <p>11/29(일) 10시 · 선착순 36팀</p>
+        <p>프론트 접수</p>
       </a>
     </div>
 
     <div class="board" id="board">
-      <article class="ev" id="jangwon" data-date="2026-10-18" data-open="2026-10-06" data-close="2026-10-15">
-        <div class="date"><b>10.18</b><small>일요일</small></div>
-        <div class="main"><div class="top"><h3>장원전 (예선 10라운드)</h3></div><p class="meta">10시 · 당 센터 정회원 누구나, 인원제한 없음 · 접수 ~10/15(목) 영업마감시</p><details><summary>요강 보기</summary><dl><dt>참가비</dt><dd>20,000원 (배당 별도 10,000원, 희망자)</dd><dt>접수</dt><dd>10/6(화) 10:00 ~ 10/15(목) 영업마감시, 대리접수 가능</dd><dt>방식</dt><dd>개인 올핀 4게임 합산, 9:50 연습투구 / 10:00 시작</dd><dt>시상</dt><dd>게임쿠폰 1위 30장, 2위 20장, 3위 15장, 4위 10장, 5위 5장</dd><dt>특전</dt><dd>매 라운드 1–3위 연말 파이널 진출 자격, 포인트 29.8점 적립</dd></dl></details></div>
+      <article class="ev minor" data-date="2026-11-10">
+        <div class="date"><b>11.10</b><small>화요일</small></div>
+        <div class="main"><div class="top"><h3>동그볼 로또 20회차 추첨</h3></div><p class="meta">화요일 추첨</p></div>
       </article>
-      <article class="ev minor" data-date="2026-10-20">
-        <div class="date"><b>10.20</b><small>화요일</small></div>
-        <div class="main"><div class="top"><h3>동그볼 로또 19회차 추첨</h3></div><p class="meta">화요일 추첨</p></div>
+      <article class="ev" id="jangwon" data-date="2026-11-15" data-open="2026-11-03" data-close="2026-11-12">
+        <div class="date"><b>11.15</b><small>일요일</small></div>
+        <div class="main"><div class="top"><h3>장원전 (예선 11라운드)</h3></div><p class="meta">10시 · 당 센터 정회원 누구나, 인원제한 없음 · 접수 ~11/12(목) 영업마감시</p><details><summary>요강 보기</summary><dl><dt>참가비</dt><dd>20,000원 (배당 별도 10,000원, 희망자)</dd><dt>접수</dt><dd>11/3(화) 10:00 ~ 11/12(목) 영업마감시, 대리접수 가능</dd><dt>방식</dt><dd>개인 올핀 4게임 합산, 9:50 연습투구 / 10:00 시작</dd><dt>시상</dt><dd>게임쿠폰 1위 30장, 2위 20장, 3위 15장, 4위 10장, 5위 5장</dd><dt>특전</dt><dd>매 라운드 1–3위 연말 파이널 진출 자격, 포인트 29.8점 적립</dd></dl></details></div>
       </article>
-      <article class="ev" id="kkotgil" data-date="2026-10-31" data-open="2026-10-20" data-close="2026-10-28">
-        <div class="date"><b>10.31</b><small>토요일</small></div>
-        <div class="main"><div class="top"><h3>꽃길 가는 길 II</h3></div><p class="meta">오전 10시 · 포인트 상위 72명 · 접수 10/20(화) ~ 10/28(수)</p><details><summary>요강 보기</summary><dl><dt>참가자격</dt><dd>7/19~10/18 포인트 상위 72명 (10/19 오전 확정 공지)</dd><dt>참가비</dt><dd>20,000원 (프론트 접수)</dd><dt>접수</dt><dd>10/20(화) 10:00 ~ 10/28(수) 영업마감시</dd><dt>방식</dt><dd>개인 9핀 5게임 합산, 9:50 연습투구 / 10:00 시작</dd><dt>시상</dt><dd>게임쿠폰 1위 30장, 2위 20장, 3위 15장 외</dd></dl></details></div>
+      <article class="ev" id="ssenja" data-date="2026-11-21">
+        <div class="date"><b>11.21</b><small>토요일</small></div>
+        <div class="main"><div class="top"><h3>쎈자배</h3></div><p class="meta">10시 · 자세한 내용은 추후 안내</p></div>
       </article>
-      <article class="ev" data-date="2026-10-09" data-open="2026-09-29" data-close="2026-10-06">
-        <div class="date"><b>10.9</b><small>금요일</small></div>
-        <div class="main"><div class="top"><h3>너만 잡자 혼성 3인조</h3></div><p class="meta">10시 · 프론트 선착순 24팀</p><details><summary>요강 보기</summary><dl><dt>참가비</dt><dd>90,000원 (당 센터 정회원 혼성 3인)</dd><dt>접수</dt><dd>9/29(화) 10:00 ~ 10/6(화) 영업마감시</dd><dt>시상</dt><dd>매 게임 승리팀 현금 3만원, 종합 시상 게임쿠폰</dd><dt>방식</dt><dd>팀(3인) 올핀 4게임 합산, 컴퓨터 랜덤 배정</dd></dl></details></div>
+      <article class="ev minor" data-date="2026-11-24">
+        <div class="date"><b>11.24</b><small>화요일</small></div>
+        <div class="main"><div class="top"><h3>동그볼 로또 21회차 추첨</h3></div><p class="meta">화요일 추첨</p></div>
       </article>
-      <article class="ev minor" data-date="2026-10-06">
-        <div class="date"><b>10.6</b><small>화요일</small></div>
-        <div class="main"><div class="top"><h3>동그볼 로또 18회차 추첨</h3></div><p class="meta">화요일 추첨</p></div>
+      <article class="ev" id="mixdouble" data-date="2026-11-29" data-open="2026-11-17" data-close="2026-11-26">
+        <div class="date"><b>11.29</b><small>일요일</small></div>
+        <div class="main"><div class="top"><h3>믹스더블 III</h3></div><p class="meta">10시 · 선착순 36팀 · 접수 11/17(화) ~ 11/26(목)</p><details><summary>요강 보기</summary><dl><dt>접수</dt><dd>11/17(화) 10:00 ~ 11/26(목) 영업마감시, 선착순 36팀</dd><dt>시간</dt><dd>11/29(일) 10:00</dd></dl></details></div>
       </article>
     </div>
     <div class="weekly">
@@ -348,7 +348,7 @@ footer small{display:block;margin-top:30px;opacity:.7}
     </div>
     <div class="final">
       <em>12.20</em>
-      <div><b>연말 장원전 Final Game</b><span>각 라운드 1–3위 및 포인트 기준 충족자 72명 출전 · 1등 150만원</span></div>
+      <div><b>연말 장원전 Final Game</b><span>일요일 · 각 라운드 1–3위 및 포인트 기준 충족자 72명 출전 · 1등 150만원</span></div>
     </div>
   </div>
 </section>
@@ -501,10 +501,9 @@ footer small{display:block;margin-top:30px;opacity:.7}
 <script>
 /* =====================================================================
    [월별 수정 방법]
-   1) 일정은 위 HTML의 <article class="ev" data-date="YYYY-MM-DD" data-open="접수시작" data-close="접수마감"> 카드를 복사·수정하세요.
-   2) 아래 스크립트는 오늘 날짜 기준으로 '접수 예정 / 접수 중 / 접수 마감 / 종료' 표시와 지난 일정 흐림 처리만 합니다.
-      (스크립트가 실행되지 않아도 일정 내용은 그대로 보입니다.)
-   3) 상단 '지금 접수 중' 카드(.hl)는 data-close 날짜가 지나면 자동으로 숨겨집니다.
+   1) 일정은 위 HTML의 <article class="ev" data-date="YYYY-MM-DD" data-open="접수시작" data-close="접수마감"> 카드를 복사·수정하세요. 리스트는 날짜순으로 두세요.
+   2) 아래 스크립트는 Asia/Seoul 오늘 기준으로 리스트 배지·상단 하이라이트 태그(접수 예정/접수 중/마감)와 지난 일정 흐림 처리를 합니다.
+   3) 상단 하이라이트(.hl)는 data-open / data-close / data-range-label / data-close-label 로 상태를 자동 갱신하고, 마감 후에는 숨깁니다.
    ===================================================================== */
 const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'}));
 const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
@@ -524,8 +523,25 @@ document.querySelectorAll('#board .ev').forEach(ev=>{
   if(past) ev.classList.add('past');
   ev.querySelector('.top').insertAdjacentHTML('beforeend',chip);
 });
-document.querySelectorAll('.hl').forEach(h=>{ if(today>d0(h.dataset.close)) h.style.display='none'; });
-if(![...document.querySelectorAll('.hl')].some(h=>h.style.display!=='none')) document.querySelector('.hls').style.display='none';
+
+document.querySelectorAll('.hl').forEach(h=>{
+  const o=h.dataset.open?d0(h.dataset.open):null;
+  const c=d0(h.dataset.close);
+  const tag=h.querySelector('.hl-tag');
+  const range=h.dataset.rangeLabel||'';
+  const closeLabel=h.dataset.closeLabel||'';
+  if(today>c){h.style.display='none';return;}
+  if(!tag||!o) return;
+  if(today<o) tag.textContent='접수 예정 · '+range;
+  else{
+    const left=dayDiff(c,today);
+    tag.textContent=left<=2?'접수 중 · 마감 임박':'접수 중 · '+closeLabel+' 마감';
+  }
+});
+if(![...document.querySelectorAll('.hl')].some(h=>h.style.display!=='none')){
+  const box=document.querySelector('.hls');
+  if(box) box.style.display='none';
+}
 
 /* 영업 상태 — 평일·주말 모두 10:00 ~ 익일 03:00 */
 (function(){
